@@ -1,0 +1,727 @@
+*{
+	padding: 0px;
+	margin: 0px;
+}
+
+body{
+	line-height: 1;
+	text-align: center;
+	font-size: 14px;
+	color: white;
+	background-color: black;
+	font-family:Avenir , "Open Sans" , "Helvetica Neue" , Helvetica , Arial , Verdana , Roboto , "游ゴシック" , "Yu Gothic" , "游ゴシック体" , "YuGothic" , "ヒラギノ角ゴ Pro W3" , "Hiragino Kaku Gothic Pro" , "Meiryo UI" , "メイリオ" , Meiryo , "ＭＳ Ｐゴシック" , "MS PGothic" , sans-serif;
+}
+
+p{
+	line-height: 1.5;
+}
+
+ul{
+	list-style: none;
+}
+
+img{
+	vertical-align: top;
+	max-width: 100%;
+	height: auto;
+}
+
+
+
+
+a:visited { 
+	color: #AFEEEE;
+}
+
+	a:hover {
+position:relative;
+top: 2px;
+left:2px;
+}
+
+
+#contents{
+	padding: 85px 186px 70px;
+}
+
+#profile,
+#portfolio,
+#sns,
+#project,
+#share{
+	padding-top : 90px;
+	padding-bottom: 90px;
+}
+
+#profile h2,
+#portfolio h2,
+#sns h2,
+#project h2{
+	margin-bottom : 60px; 
+}
+
+/*ヘッダー*/
+header{
+	width: 100%;
+	height: auto;
+}
+
+/*header img{
+	float: left;
+	text-align: center;
+}
+
+/*メニュー*/
+
+
+
+nav ul#foo{ 
+	width: 100%;
+	padding: 0; 
+	/*margin-left: -10px;*/ 
+	list-style: none; 
+}
+
+nav{
+	width: 90%;
+	margin:0 auto;
+}
+
+
+
+
+/*
+nav img{
+	display: inline-block;
+	width: 16.6%;
+	height: auto;
+}
+*/
+
+
+
+nav ul li{  
+	width: 12.5%;
+	float: left;
+	text-align: center;
+	color: #FFFFFF;
+	padding-top: 30px;
+	padding-bottom: 30px;	 
+}
+
+
+
+/*ボタンオーバーhomeボタン
+nav ul li.HOME{
+	background: url("../images/home_bottan.png") no-repeat;
+	width:180px;
+	height: 80px;
+}
+
+nav ul li.HOME a{
+	display: inline-block; 
+}
+
+nav ul li.HOME:hover{
+	background: url("../images/home_hover.png") no-repeat;
+	width:180px;
+	height: 80px;
+}
+
+nav ul li.HOME a:hover img{
+	visibility: hidden;
+}
+
+/*ボタンオーバープロフィールボタン	
+nav ul li.PROFILE{
+	background: url("../images/profile_bottan.png") no-repeat;
+	width:180px;
+	height: 80px;
+}
+
+nav ul li.PROFILE a{
+	display: inline-block; 
+}
+
+nav ul li.PROFILE:hover{
+	background: url("../images/profile_hover.png") no-repeat;
+	width:180px;
+	height: 80px;
+}
+
+nav ul li.PROFILE a:hover img{
+	visibility: hidden;
+}
+
+/*ボタンオーバーポートフォリオ
+nav ul li.PORTFOLIO{
+	background: url("../images/portfolio_bottan.png") no-repeat;
+	width:180px;
+	height: 80px;
+}
+
+nav ul li.PORTFOLIO a{
+	display: inline-block; 
+}
+
+nav ul li.PORTFOLIO:hover{
+	background: url("../images/portfolio_hover.png") no-repeat;
+	width:180px;
+	height: 80px;
+}
+
+nav ul li.PORTFOLIO a:hover img{
+	visibility: hidden;
+}
+
+/*ボタンオーバーSNS
+nav ul li.SNS{
+	background: url("../images/sns_bottan.png") no-repeat;
+	width:180px;
+	height: 80px;
+}
+
+nav ul li.SNS a{
+	display: inline-block; 
+}
+
+nav ul li.SNS:hover{
+	background: url("../images/sns_hover.png") no-repeat;
+	width:180px;
+	height: 80px;
+}
+
+nav ul li.SNS a:hover img{
+	visibility: hidden;
+}
+
+/*ボタンオーバープロジェクト
+nav ul li.PROJECT{
+	background: url("../images/project_bottan.png") no-repeat;
+	width:180px;
+	height: 80px;
+}
+
+nav ul li.PROJECT a{
+	display: inline-block; 
+}
+
+nav ul li.PROJECT:hover{
+	background: url("../images/project_hover.png") no-repeat;
+	width:180px;
+	height: 80px;
+}
+
+nav ul li.PROJECT a:hover img{
+	visibility: hidden;
+}
+
+/*ボタンオーバーコンタクト
+nav ul li.CONTACT{
+	background: url("../images/contact_bottan.png") no-repeat;
+	width:180px;
+	height: 80px;
+}
+
+nav ul li.CONTACT a{
+	display: inline-block; 
+}
+
+nav ul li.CONTACT:hover{
+	background: url("../images/contact_hover.png") no-repeat;
+	width:180px;
+	height: 80px;
+}
+
+nav ul li.CONTACT a:hover img{
+	visibility: hidden;
+}
+
+/*プロフィール*/
+#profile{
+	clear: both;
+	background-color: rgba(1,85,108,1);
+	text-align: center;
+	background-image: url("../images/arumikan1.png") ;
+}
+
+p.copy{
+	margin-bottom : 60px; 
+}
+
+#profile h2{
+	font-weight:300;
+	font-size:1.3em;
+}
+
+/*メンバー*/
+
+#member{
+	width:100%;
+	height:640px;
+	margin:0 auto;
+	background-color:#131313;
+	text-align:center;
+}
+
+#mem_content{
+	width:1264px;
+	margin:0 auto;
+}
+
+#member h2{
+	padding:90px 0;
+	font-weight:300;
+	font-size:1.3em;
+	/*border-bottom:1px solid #fff;*/
+}
+
+.heading{
+	border-bottom:1px solid #fff;
+}
+
+#member.member03{
+	width:50%;
+	height:auto;
+	margin:0 auto;
+}
+
+#member01{
+	width:632px;
+	height:352px;
+	background:url(../images/member_04.png) no-repeat left top;
+	float:left;
+}
+
+#member02{
+	width:632px;
+	height:352px;
+	background:url(../images/member_03.png) no-repeat left top;
+	float:left;
+}
+
+.member03 a{
+	text-decoration:none;
+	color:#fff;
+}
+
+.member03 p{
+	padding-top:120px;
+	line-height:2.5em;
+}
+
+span.name{
+	font-size:2.0em;
+}
+
+
+/*ニュース*/
+
+#news h2{
+	padding-top:55px;
+	margin-bottom:55px;
+	font-weight:300;
+	font-size:1.3em;
+}
+
+#news{
+	width:100%;
+	background-color: #01556c;
+	clear: both;
+	text-align: center;
+	background-image: url("../images/news07.png");
+	background-position: center center;
+	height:490px;
+}
+
+div.news01{
+	width:240px;
+	height:355px;
+	margin:0 auto;
+}
+
+.news01 p span.title{
+	font-size:1.2em;
+}
+
+.news01 p{
+	width:240px;
+	height:270px;
+	margin:0 auto;
+	border:#fff solid 4px;
+	line-height:3.4em;
+	padding-top:30px;
+}
+
+.news02 p{
+	width:240px;
+	height:270px;
+	margin:0 auto;
+	border:#fff solid 4px;
+	line-height:4.3em;
+	padding-top:30px;
+}
+
+.link{
+	color:#AFEEEE;
+}
+
+.news03 p{
+	width:240px;
+	height:270px;
+	margin:0 auto;
+	border:#fff solid 4px;
+	line-height:2.4em;
+	padding-top:30px;
+}
+
+/*.news02 p{
+	width:240px;
+	height:270px;
+	margin:0 auto;
+	border:#fff solid 4px;
+	line-height:2.8em;
+	padding-top:30px;
+}*/
+
+a#link{
+	text-decoration:none;
+	color:#AFEEEE;
+}
+
+/*ポートフォリオ*/
+#portfolio h2{
+	font-weight:300;
+	font-size:1.3em;
+}
+
+#portfolio h3{
+	margin-top: 15px;
+	color: white;
+	text-decoration: none;
+	font-family: 'Raleway', sans-serif;
+	font-weight: 400;
+	font-size: 16px;
+}
+
+#portfolio h4{
+	margin-top: 30px;
+	color: white;
+	text-decoration: none;
+	color: #40c5f6;
+}
+
+#portfolio ul#text li{
+	width:380px;
+	margin:0 auto;
+	margin-bottom: 120px;
+	padding: 10px;
+	border: medium solid #40c5f6;
+}
+
+#portfolio ul#text li:hover {
+box-shadow: inset 0 0 0 3px #40c5f6;
+} 
+
+
+#text{
+ 	margin-top: 100px;
+}
+
+#portfolio a{
+	text-decoration: none;
+}
+
+.block1 li{
+	max-width: 100%;
+	height: auto;
+}
+
+.block2 li{
+	max-width: 100%;
+	height: auto;
+}
+
+.block3 li{
+	max-width: 100%;
+	height: auto;
+}
+
+.block4 li{
+	max-width: 100%;
+	height: auto;
+}
+
+ul#imgbox img{
+	display: block;
+	width: 75%;
+	margin: auto;
+	margin-top: 40px;
+	height: auto;	
+}
+
+ul#imgbox{
+	width: 85%;
+	margin: auto;
+}
+
+ul#imgbox li{
+	float: left;
+	width: 50%;
+	text-decoration: none;
+/*	margin: 0 140px 40px 0;*/
+}
+
+/*ul#imgbox li.liright{
+	margin: 0 0 40px 0;
+}*/
+
+ul#imgbox li h3{
+	margin-top: 15px;
+	color: white;
+	text-decoration: none;
+	font-family: 'Raleway', sans-serif;
+	font-weight: 400;
+	font-size: 16px;
+}
+
+ul#imgbox li h4{
+	margin-top: 10px;
+	color: white;
+	text-decoration: none;
+}
+
+#imgbox li h4.last{
+	margin-bottom: 40px;
+}
+
+#PORTFOLIO h3{
+	color: white;
+	margin-top: 30px;
+}
+
+/*SNS*/
+#sns h2{
+	font-weight:300;
+	font-size:1.3em;
+	letter-spacing:0.05em;
+}
+
+#sns{
+	background-color: rgba(1,85,108,1);
+	clear: both;
+	text-align: center;
+	background-image: url("../images/kurumaga1.png");
+}
+
+.facebook,
+.twitter,
+.instagram{
+	margin : 3px ;
+}
+
+.twitter{
+	margin-right: 4px;
+}
+
+/*プロジェクト*/
+#project h2{
+	font-weight:300;
+	font-size:1.3em;
+}
+
+.proleft{
+	width: 500px;
+	height: 550px;
+	background-color: rgba(1,85,108,0.5);
+	margin: 0 auto;
+	padding-right: 8px;
+    padding-left: 8px;
+    padding-top: 18px;
+    padding-bottom: 20px;
+}
+
+.proleft h4{
+	font-size: 14px;
+	font-family: 'Raleway', sans-serif;
+	text-align: center;
+	margin: 30px;
+}
+
+.proleft p{
+	text-align: center;
+	margin: 30px;
+}
+
+.proleft p.small{
+	font-size:11px;
+	line-height:1.8em;
+	text-align:left;
+}
+
+.exhibition{
+	width:500px;
+	margin:0 auto;
+	text-align:center;
+	/*padding-left:8px;*/
+}
+
+.bxcenter{
+	padding-left:8px;
+}
+
+/*シェア*/
+#share{
+	background-color: #01556c;
+	clear: both;
+	text-align: center;
+	background-image: url("../images/saiwomite.png");
+	background-position: center center;
+}
+
+p.oshare{
+	margin-bottom: 30px;
+}
+
+.twitterbottan{
+	margin-top: 30px;
+}
+
+.facebookbottan{
+	margin-top: 30px;
+}
+
+/*コンタクト*/
+#contact{
+	background-color: #01556c;
+	clear: both;
+	text-align: center;
+	margin: auto;
+}
+
+#contact h2{
+	padding-top: 60px;
+	padding-bottom: 40px;
+}
+
+form{
+	margin-top:30px; 
+	margin-bottom : 60px; 
+	padding-bottom: 60px;
+	clear: both;
+}
+
+#contact p{
+	margin: 15px;
+	text-align: center;
+}
+
+#para{
+	width: 254px;
+	height:100px;
+}
+
+#name,
+#email{
+	width: 254px;
+}
+
+/*フッター*/
+footer{
+	padding: 20px;
+}
+
+/*メディアクエリ*/
+@media all and (max-width: 1260px){	
+
+	#mem_content{
+		width:100%;
+		margin:0 auto;
+	}
+
+	#member{
+		width:100%;
+		height:1040px;
+		margin:0 auto;
+		background-color:#131313;
+		text-align:center;
+	}
+
+	#member01,#member02{
+		float: none;
+		width:632px;
+		height:352px;
+		margin:0 auto;
+		margin-bottom:50px;
+	}
+}
+
+@media all and (max-width: 1000px){	
+	ul#imgbox li{
+	float: none;
+	width: 100%;}
+}
+
+@media all and (max-width: 520px){
+	.proleft{
+	float: none;
+	width: 85%;}
+	
+	#portfolio ul#text li{
+		width:320px;
+		margin:0 auto;
+		margin-bottom:80px;
+	}
+}
+/* styles for desktop */
+	.tinynav { display: none }
+
+	/* styles for mobile */
+	@media screen and (max-width: 600px) {
+		#member{
+			width:100%;
+			height:995px;
+			font-size:0.9em;
+		}
+		
+		
+		
+		#member01{
+			background:url(../images/member_02.png) no-repeat top center;
+			width:320px;
+			height:350px;
+			margin:0 auto;
+			margin-bottom:50px;
+		}
+		
+		#member02{
+			background:url(../images/member_03.png) no-repeat top center;
+			width:320px;
+			height:350px;
+			margin:0 auto;
+		}
+		
+	   .tinynav { display: block }
+	   	#foo li{ width: 25%; }
+		
+		p.copy{
+			width:90%;
+			height:auto;
+			margin:0 auto;
+			margin-bottom : 60px;
+		}
+	}
+
+
+	@media screen and (max-width: 1000px) {
+		
+		.tinynav { display: block }
+	   	#foo li{ width: 25%; }
+		
+	}
+	
+	
+	
+	
+	
+	

@@ -1,0 +1,13 @@
+<h1>メンバー　個人ページ</h1>
+
+<% if @member.image? %>
+<p><%= image_tag(@member.image, :size=> "100x100", :class => "img_show")%></p>
+<% else %>
+<p><%= image_tag('penpen.png', :size => "50x50", :class => "img_show") %></p>
+<% end %>
+
+<%= @member.name %><br>
+<%= @member.month %><br>
+<%= @member.barth %><br>
+
+<%= link_to "プロフィール編集", edit_member_path(@member) %>
