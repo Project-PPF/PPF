@@ -24,14 +24,14 @@
      <article class="event-article">
        <div class="new">NEW!!</div>
         <h1>個性あふれる仮装でHalloween<br> <font color="red">❤</font>　１０８０　2016.11.04</h1>
-        <img class="new-event" src="img/img.jpg">
+        <%= image_tag('img.png', :size => "200x200", :class => "new-event") %>
         <p class="event-sentence">ハロウィンパーティーしましたーーー！！！...<br>記事。。。。。</p>
      </article>
    </div>
    <div class="col-xs-12">
      <article class="event-sub-article">
         <h1>PPFサークル</h1>
-        <img class="sub-event" src="img/img.jpg">
+        <%= image_tag('img.png', :size => "200x200", :class => "sub-event") %>
         <p class="event-sentence">記事。。。。。
         </p>
         <p class="event-day"><font color="red">❤</font>３００　2016.10.10</p>
@@ -39,8 +39,8 @@
     </div>
     <div class="col-xs-12">
      <article class="event-sub-article">
-        <h1>プログラミイング講座</h1>
-        <img class="sub-event" src="img/img.jpg">
+        <h1>プログラミング講座</h1>
+        <%= image_tag('img.png', :size => "200x200", :class => "sub-event") %>
         <p class="event-sentence">記事。。。。。
         </p>
         <p class="event-day"><font color="red">❤</font>２００　2016.08.08</p>
@@ -53,8 +53,7 @@
      <h1>人気記事</h1>
      <ul>
         <li><a href="#">2016.11.11 <font color="red">❤</font>３４６<br>
-        <%= image_tag('penpen.png', :size => "50x50", :class => "img_show") %>
-        <%= image_tag('img.jpg', :size => "50x50", :class => "side-img") %>
+        <%= image_tag('img.png', :size => "50x50", :class => "side-img") %>
         <p class="side-text">PPFイベント</p></li>
         <li><a href="#">2016.11.24　❤７９３<br>...</a></li>
         <li><a href="#">2016.11.30　❤５００<br>...</a></li>

@@ -16,7 +16,7 @@ Rails.application.routes.draw do
   get '/concept' => 'home#concept'
   get '/activity' => 'home#activity'
   get '/contact' => 'home#contact'
-  # get 'home/about'
+  get '/about' => 'home#about'
 
   devise_for :members, controllers: {
   registrations: 'members/registrations'

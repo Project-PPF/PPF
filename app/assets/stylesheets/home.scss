@@ -16,7 +16,7 @@
 	border: 3px dotted white;
 }
 
-
+/*
 .Cection1{
 	height: 1500px;
 }
@@ -207,7 +207,7 @@ h6{
 
 /*ここからメンバー*/
 
-.member::after {
+/*.member::after {
     content: "";
     display: block;
     clear: both;
@@ -257,8 +257,9 @@ form{
 img .icon{
 	background-size: cover;
 	float: left;
-}
+}*/
 
+/*ここからactivity*/
 
 .boxA:after{
 	content: "";
@@ -451,6 +452,143 @@ img .icon{
 	display: inline;
 }
 
+/*ここからabout*/
+
+.about-main h1 {
+    margin: 50px auto 0;
+    color: #FCFFFF;
+    position: relative;
+    padding: .5em .75em;
+    background-color: #05306E;
+    border-radius: 6px;
+}
+
+.about-main .p1{
+    height: 300px;
+    margin: 50px auto 0;
+    background-color: #556186;
+    border-radius: 6px;
+
+}
+
+.about-main h1::after {
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    content: '';
+    width: 0;
+    height: 0;
+    border: 10px solid transparent;
+    border-top: 15px solid #05306E;
+}
+
+.about-box1 h1 {
+    margin: 50px auto 0;
+    font-size: 25px;
+    position: relative;
+    color: #FCFFFF;
+    line-height: 50px;
+    padding: 0 1em;
+    background-color: #05306E;
+}
+
+.about-box1 h1::before,
+.about-box1 h1::after {
+    content: '';
+    position: absolute;
+}
+
+.about-box1 h1::before {
+    top: 100%;
+    left: 0;
+    border-width: 0 15px 15px 0;
+    border-style: solid;
+    border-color: transparent;
+    border-right-color: #E6F8F8;
+}
+
+.about-box1 h1::after {
+    top: 0;
+    right: 0;
+    z-index: 2;
+    border-width: 25px 20px;
+    border-style: solid;
+    border-color: transparent;
+    border-right-color: #E6F8F8;
+}
+
+.about-box1 p {
+    margin: 40px 0;
+    color: #05306E;
+    font-size: 35px;
+}
+
+.about-box2{
+    box-sizing: border-box;
+    display: block;
+    margin-top: 50px;
+    color:  #FCFFFF;
+}
+
+.about-box2-item h2 {
+    position: relative;
+    padding: .75em 1em;
+    background-color: #05306E;
+}
+
+.about-box2-item h2::before,
+.about-box2-item h2::after {
+    content: '';
+    position: absolute;
+    top: 100%;
+    border-style: solid;
+    border-color: transparent;
+}
+
+.about-box2-item h2::before {
+    left: 0;
+    border-width: 0 15px 15px 0;
+    border-right-color: #ccc;
+}
+
+.about-box2-item h2::after {
+    right: 0;
+    border-style: solid;
+    border-width: 15px 15px 0 0;
+    border-top-color: #ccc;
+}
+
+
+.about-box3 p {
+    margin: 30px 0;
+    color: #05306E;
+    font-size: 20px;
+}
+
+.about-button {
+    font-size: 20px;
+    padding: 20px 50px;
+    background-color: #333;
+    border: 2px solid #333;
+    color: #fff;
+    line-height: 50px;
+    text-decoration: none;
+}
+.about-button:hover {
+    background-color: #fff;
+    border-color: #59b1eb;
+    color: #59b1eb;
+}
+
+.clearfix{
+    content: "";
+    display: block;
+    clear: both;
+}
+
+section{
+    margin-bottom: 50px;
+}
 
 
 @media screen and (max-width: 768px){

@@ -7,3 +7,114 @@
 	width: 40px;
 	height: 40px;
 }
+
+/*一覧*/
+
+.m-menb h1{
+	text-align: center;
+	margin: 50px auto 0;
+    color: #FCFFFF;
+    padding: .5em .75em;
+    background-color: #05306E;
+    border-radius: 6px;
+}
+
+.m.menb-box1{
+	text-align: center;
+}
+
+
+
+button {
+    font-size: 20px;
+    padding: 20px 50px;
+    background-color: #333;
+    border: 2px solid #333;
+    color: #fff !important;
+    line-height: 50px;
+    text-decoration: none;
+}
+
+button:hover {
+    background-color: #fff;
+    border-color: #59b1eb;
+    color: #333 !important;
+}
+
+
+img{
+	width: 150px;
+	height: 150px;
+	text-align: center;
+	border-radius: 50%;
+	margin-top: 50px;
+}
+
+
+
+/*show*/
+
+
+.plof {
+    padding-top: 50px;
+}
+
+img {
+    text-align: right;
+}
+
+h1 {
+    text-align: center;
+    font-family: 'Cinzel', serif;
+    padding: 10px 50px;
+    background-color: #f0f0f0;
+    border-radius: 6px;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, .1) inset;
+}
+
+.plof h2 {
+    color: #f0f0f0 !important;
+    font-family: 'Cinzel', serif;
+    text-align: center;
+}
+
+.plof p {
+    font-family: 'Cinzel', serif;
+    color: #f0f0f0;
+    text-align: center;
+    padding: .25em 0 .5em .75em;
+    border-left: 6px solid #ccc;
+    border-bottom: 1px solid #ccc;
+}
+
+button {
+    padding: 20px 0;
+    color: black !important;
+    background-color: #f0f0f0 !important;
+}
+
+button:hover {
+    background-color: #F0F00F !important;
+}
+
+.menb-coment {
+    text-align: center;
+    color: #f0f0f0;
+    font-family: 'Cinzel', serif;
+    margin-top: 10px;
+    padding: 30px 15px;
+    background: #5E6B93;
+    border-top: 1px dashed #ccc;
+    border-bottom: 1px dashed #ccc;
+    box-shadow: 0 7px 10px -5px rgba(0, 0, 0, .1) inset;
+}
+
+.menb-btn-item {
+    margin: 50px;
+}
+
+.clearfix {
+    content: "";
+    display: block;
+    clear: both;
+}
