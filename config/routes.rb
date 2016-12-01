@@ -3,13 +3,13 @@ Rails.application.routes.draw do
 
   get 'portfolios/show' => 'portfolios#show'
 
-  # get 'members/index' => 'members#index'
+  get 'members/index' => 'members#index'
 
-  # get 'members/:id/show' => 'members#show'
+  get 'members/:id/show' => 'members#show'
 
   # get 'members/edit' => 'members#edit'
 
-  resources :members
+  # resources :members
 
   root 'home#top'
 
