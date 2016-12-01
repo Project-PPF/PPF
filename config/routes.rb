@@ -1,4 +1,8 @@
 Rails.application.routes.draw do
+  get 'portfolios/index' => 'portfolios#index'
+
+  get 'portfolios/show' => 'portfolios#show'
+
   # get 'members/index' => 'members#index'
 
   # get 'members/:id/show' => 'members#show'
@@ -9,6 +13,9 @@ Rails.application.routes.draw do
 
   root 'home#top'
 
+  get '/concept' => 'home#concept'
+  get '/activity' => 'home#activity'
+  get '/contact' => 'home#contact'
   # get 'home/about'
 
   devise_for :members, controllers: {
