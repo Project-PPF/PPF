@@ -10,9 +10,9 @@
 <div class="top-content-top">
 <nav>
   <ul>
-    <li class="top-li"><a href="#">Concept</a></li>
-    <li class="top-li"><a href="#">What'sPPF</a></li>
-    <li class="top-li"><a href="#">Portfolio</a></li>
+    <li class="top-li"><%= link_to "Concept", concept_path %></li>
+    <li class="top-li"><%= link_to "What'sPPF", about_path %></li>
+    <li class="top-li"><%= link_to "Portfolios", portfolios_index_path %></li>
   </ul>
 </nav>
 </div>
@@ -20,9 +20,9 @@
 <div class="top-content-sub">
 <nav>
   <ul>
-    <li class="top-li"><a href="#">Member</a></li>
-    <li class="top-li"><a href="#">Activity</a></li>
-    <li class="top-li"><a href="#">Contact</a></li>
+    <li class="top-li"><%= link_to "Member", "/members/index" %></li>
+    <li class="top-li"><%= link_to "Activity", activity_path %></li>
+    <li class="top-li"><%= link_to "Contact", contact_path %></li>
   </ul>
 </nav>
 
