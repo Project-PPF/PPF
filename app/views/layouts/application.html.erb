@@ -13,11 +13,11 @@
 
   <body>
           <%# if user_signed_in? %> 
-          Logged in as <%#= current_user.email %>
-          <%= link_to "ログアウト", destroy_member_session_path, method: :delete %>
+          <!-- Logged in as --> <%#= current_user.email %>
+          <%#= link_to "ログアウト", destroy_member_session_path, method: :delete %>
         <%# else %>
-          <%= link_to "サインイン", new_member_registration_path %> |
-          <%= link_to "ログイン", new_member_session_path %>
+          <%#= link_to "サインイン", new_member_registration_path %> |
+          <%#= link_to "ログイン", new_member_session_path %>
         <%# end %>
     <%= yield %>
   </body>
