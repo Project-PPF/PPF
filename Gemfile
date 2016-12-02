@@ -17,6 +17,9 @@ gem 'coffee-rails', '~> 4.2'
 # gem 'therubyracer', platforms: :ruby
 gem 'devise'
 
+gem 'bootstrap-sass'
+gem 'autoprefixer-rails'
+
 gem 'carrierwave'
 gem 'rmagick'
 # Use jquery as the JavaScript library
