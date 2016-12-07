@@ -1,7 +1,7 @@
 <h1>Activity一覧ページ</h1>
 <% @posts.each do |post| %>
-	<P>タイトル</P>
-	<span><%=　link_to post.title, posts_show_path %></span>
+	<P>Title</P>
+	<span><%= link_to post.title, post_path(post.id) %></span>
 
 
 
