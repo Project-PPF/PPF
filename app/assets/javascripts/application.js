@@ -17,6 +17,7 @@
 //= require_tree .
 
 
+
 $(function(){
   $(window).scroll(function(){
     var offset =$('.round-container').offset();
