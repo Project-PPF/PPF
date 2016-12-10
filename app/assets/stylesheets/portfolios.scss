@@ -1,86 +1,126 @@
 // Place all the styles related to the portfolios controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
-
-.Portfolio-title{
-	margin: 30px auto;
-	text-align: center;
-	width: 260px;
-	height: 60px;
-	font-size: 30px;
-	border-radius: 3%;
-	color: #FCFFFF;
-	background-color: #05306E;
-
-}
-.portforio-subtitle{
-	width: 900px;
-	margin: 80px 40px 0;
-	text-align: center;
-	font-size: 40px;
-	color: #FCFFFF;
-	background-color: #05306E;
-	border: ridge 8px white;
-}
-.dajaart{
-	width: 500px;
-	height: 500px;
-	float: left;
-	margin: 60px 0 0 30px;
-}
-h4{
-	height: 50px;
-	margin: 70px 70px 0 0;
-	font-size: 40px;
-	color: #05306E;
-	float: right;
+body {
+  width: 100%;
+    background-image: -webkit-gradient(
+                  linear
+                , left top
+                , left bottom
+                , from(#bbdbf3)
+                , to(#26499d));
+    color: #f0f0f0　!important;
+    font-family: 'Cinzel', serif !important;
 }
 
-.portfolio-what{
-	height: 60px;
+.container{
+  width: 90%;
+  max-width: 1096px;
+  margin: 0 auto;
 }
 
-.portfolio-what-item{
-	font-size: 30px;
-	color: #05306E;
-	float: right;
+section{
+}
+.pf-heading{
+  text-align: center;
+  font-size: 48px;
+  margin-top: 15px; 
 }
 
-.portfolio-what-item{
-	margin: 50px;
+
+
+#what-pf{
+  /*background: url(../img/xpaper_00022.jpg.pagespeed.ic.2pFN9VUXKI.webp) no-repeat top center;
+ */ height: 630px;
 }
 
-.portfolio-box{
-	display: inline-block;
-	margin: 50px;
-	width: 120px;
-	height: 120px;
-	border-radius: 50%;
-	background-color: #05306e;
-	border: 2px solid #FCFFFF;
-}
-/*完成時はボックスのボーダー部分にマウスオーバーでアニメーション*/
-.portfolio-box:hover{
-	border-style: dashed;
-}
-.clearfix:after {
-    content: "";
-    display: block;
-    clear: both;
+.what-pf-content{
+  width: 100%;
 }
 
-.portfolio-big-box{
-	margin: 10px;
-
+.what-pf-img-box{
+  width: 80%;
+  margin: 15px 20% 0 0;
 }
 
-.Portfolio-text{
-	margin: 30px auto;
-	font-size: 30px;
-	text-align: center;
-	width: 150px;
-	height: 50px;
-	/*border-radius: %;*/
-	color: #FCFFFF;
-	background-color:#05306e;
+.what-pf-img-box .img{
+  width: 100%;
+}
+.what-pf-text-box h3{
+  font-size: 24px;
+  
+}
+
+.what-pf-text-box{
+  margin: 15px 0 0 0; 
+}
+
+.what-pf-text-box ul{
+  list-style: none;
+}
+
+.what-pf-text-box ul li{
+  
+}
+
+#portfolios{
+  
+}
+
+.row {
+  /*height: 480px;*/
+  width: 100%;
+}
+
+.card{
+  width: 33%;
+  height: 100%;
+  display: inline-block;
+  vertical-align: top;
+}
+
+.pf-img{
+  width: 100%;
+  min-height: 50%;
+  max-height: 50%; 
+  background-image: url(../img/DAJAART_top.png);
+  -webkit-background-size: cover;
+  background-size: cover;
+  background-position: center;
+}
+
+.pf-img  .img{
+  width: 100%;
+  max-height: 20%;
+}
+
+.author-img{
+  width: 15%;
+  display: inline-block;
+  vertical-align: middle;
+  /*margin: ;*/
+}
+
+.author-img .img{
+  width: 250%;
+  border-radius: 50%;
+}
+
+.pf-title{
+  width: 60%;
+  max-height: 13%;
+  overflow: hidden;
+  display: inline-block;
+  margin: 5% 0 0 15px;
+  font-weight: bold;
+  word-wrap: break-word;
+}
+
+.pf-text{
+  word-wrap: break-word;
+}
+
+
+body{
+  color: white;
 }
