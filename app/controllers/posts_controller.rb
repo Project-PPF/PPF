@@ -7,8 +7,10 @@ class PostsController < ApplicationController
 
   def create
   	@post = Post.new(post_params)
+  	@post.title = params[:title]
+    @post.body = params[:body]
   	@post.save
-  	redirect_to post_path(@post.id)
+  	redirect_to '/activity'
   end
 
   def index
@@ -16,6 +18,7 @@ class PostsController < ApplicationController
   end
 
   def show
+  	@post = Post.find(params[:id])
   end
 
   def edit
@@ -39,6 +42,6 @@ class PostsController < ApplicationController
   	end
 
   	def post_params
-  		params.require(:post).permit(:title, :body, :image)
+  		params.require(:post).permit(:title, :body, :user_id, :image)
   	end
 end
