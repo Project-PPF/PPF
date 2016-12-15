@@ -53,8 +53,8 @@
 }
 
 li{
-	float: left;
-	margin: 20px;
+/*	float: left;
+*/	margin: 20px;
 	list-style-type: none;
 }
 a{
@@ -67,3 +67,9 @@ a{
 	color: #f0f8ff;
 	font-size: 15px;
 }
+
+/*@media screen and (max-width: 768px){
+	#container{
+	    width:100%;
+	}
+}*/

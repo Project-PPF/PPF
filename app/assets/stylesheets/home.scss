@@ -305,12 +305,17 @@ img .icon{
 }*/
 
 /*ここからactivity*/
+.big-container{
+	width: 100%;
+	background-color: #E6F8F8;
+}
 
 .boxA:after{
 	content: "";
 	display: block;
 	clear: both;
 }
+
 .boxA{
 	margin-top: 20px;
 }
@@ -358,7 +363,7 @@ img .icon{
 	margin: 20px;
 	color: #05306e;
 	font-size: 20px;
-	border-bottom: ridge 1px #f0f8ff;
+	border-bottom: ridge 1px #000;
 	text-decoration: none;
 }
 .event-nav li a:hover{
@@ -496,6 +501,8 @@ img .icon{
 .side-text{
 	display: inline;
 }
+
+
 
 /*ここからabout*/
 
