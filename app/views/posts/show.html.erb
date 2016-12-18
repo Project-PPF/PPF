@@ -12,6 +12,6 @@
 
 <%= link_to "削除", destroy_post_path(@post.id), method: :delete, class: "btn destroy-btn", "data-confirm" => "本当に削除しますか？" %>
 
-<%= link_to "一覧に戻る", posts_path %>
+<%= link_to "一覧に戻る", '/activity' %>
 
 <%= link_to "新規投稿", posts_new_path(@post.id) %>

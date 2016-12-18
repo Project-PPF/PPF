@@ -2,13 +2,11 @@ class PostsController < ApplicationController
 	before_action :set_post, only:[:show, :edit, :update, :destroy]
 
   def new
-  	@title = params[:title]
+  	@post = Post.new
   end
 
   def create
   	@post = Post.new(post_params)
-  	@post.title = params[:title]
-    @post.body = params[:body]
   	@post.save
   	redirect_to '/activity'
   end
