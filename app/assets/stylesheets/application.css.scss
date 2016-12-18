@@ -33,6 +33,47 @@
 	margin: 0;
 	padding: 0;
 }
+.navbar{
+    position: fixed;
+}
+
+#menu {
+    width: 30px;
+    height: 25px;
+    margin: 0 auto;
+    left: 20;
+    cursor: pointer;
+}
+#menu .bar {
+    display: inline-block;
+    width: 30px;
+    height: 5px;
+    background-color: #0099FF;
+    position: absolute;
+    left: 0;
+    transition: .15s ease-in-out;
+}
+#bar01 {
+    top: 0;
+}
+#bar02 {
+    top: 10px;
+}
+#bar03 {
+    top: 20px;
+}
+.active #bar01 {
+    top: 10px;
+    transform: rotate(45deg);
+}
+.active #bar02 {
+    width: 0;
+}
+.active #bar03 {
+    top: 10px;
+    transform: rotate(-45deg);
+}
+
 
 .footer-container{
 	width: 100%;
