@@ -1,3 +1,126 @@
 // Place all the styles related to the portfolios controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+body {
+  width: 100%;
+    background-image: -webkit-gradient(
+                  linear
+                , left top
+                , left bottom
+                , from(#bbdbf3)
+                , to(#26499d));
+    color: #f0f0f0　!important;
+    font-family: 'Cinzel', serif !important;
+}
+
+.container{
+  width: 90%;
+  max-width: 1096px;
+  margin: 0 auto;
+}
+
+section{
+}
+.pf-heading{
+  text-align: center;
+  font-size: 48px;
+  margin-top: 15px; 
+}
+
+
+
+#what-pf{
+  /*background: url(../img/xpaper_00022.jpg.pagespeed.ic.2pFN9VUXKI.webp) no-repeat top center;
+ */ height: 630px;
+}
+
+.what-pf-content{
+  width: 100%;
+}
+
+.what-pf-img-box{
+  width: 80%;
+  margin: 15px 20% 0 0;
+}
+
+.what-pf-img-box .img{
+  width: 100%;
+}
+.what-pf-text-box h3{
+  font-size: 24px;
+  
+}
+
+.what-pf-text-box{
+  margin: 15px 0 0 0; 
+}
+
+.what-pf-text-box ul{
+  list-style: none;
+}
+
+.what-pf-text-box ul li{
+  
+}
+
+#portfolios{
+  
+}
+
+.row {
+  /*height: 480px;*/
+  width: 100%;
+}
+
+.card{
+  width: 33%;
+  height: 100%;
+  display: inline-block;
+  vertical-align: top;
+}
+
+.pf-img{
+  width: 100%;
+  min-height: 50%;
+  max-height: 50%; 
+  background-image: url(../img/DAJAART_top.png);
+  -webkit-background-size: cover;
+  background-size: cover;
+  background-position: center;
+}
+
+.pf-img  .img{
+  width: 100%;
+  max-height: 20%;
+}
+
+.author-img{
+  width: 15%;
+  display: inline-block;
+  vertical-align: middle;
+  /*margin: ;*/
+}
+
+.author-img .img{
+  width: 250%;
+  border-radius: 50%;
+}
+
+.pf-title{
+  width: 60%;
+  max-height: 13%;
+  overflow: hidden;
+  display: inline-block;
+  margin: 5% 0 0 15px;
+  font-weight: bold;
+  word-wrap: break-word;
+}
+
+.pf-text{
+  word-wrap: break-word;
+}
+
+
+body{
+  color: white;
+}
