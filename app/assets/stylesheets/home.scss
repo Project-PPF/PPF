@@ -16,6 +16,51 @@
 	border: 3px dotted white;
 }
 
+
+/*トップ*/
+
+
+.top-title{
+	text-align: center;
+	width: 100%;
+	height: 400px;
+	
+}
+
+.top-sub{
+	float: left;
+	width: 100%;
+	height: auto; 
+	border-top: solid 2px #000;
+	
+}
+
+.top-li{
+	list-style-type: none;
+	float: left;
+}
+
+
+.top-content-top{
+	/*margin: 10px;*/
+	width: 400px;
+	height: 200px;
+	
+
+}
+.top-content-top li{
+	margin: 20px;
+}
+
+.top-content-sub{
+	/*margin: 10px;*/
+	width: 400px;
+	height: 200px;
+}
+.top-content-sub li{
+	margin: 25px;
+}
+
 /*
 .Cection1{
 	height: 1500px;
@@ -588,6 +633,122 @@ img .icon{
 
 section{
     margin-bottom: 50px;
+}
+
+/*ここからコンセプト*/
+
+.concept {
+	width: 100%;
+	text-align: center;
+	font-weight: 100;
+	background-color: #070784;
+}
+
+.c-title {
+	margin-bottom: 50px;
+	padding: 10px 0;
+	background-color: #D8D6F4;
+}
+
+.top-text,.bottom-text {
+	width: 176px;
+	margin: 0 auto;
+	text-align: center;
+	line-height: 2;
+}
+
+.bottom-text {
+	margin-bottom: 50px;
+}
+
+.round-container {
+	position: relative;
+	width: 500px;
+	height: 700px;
+	margin: 100px auto;
+}
+
+.round {
+	width: 150px;
+	height: 150px;
+	border-radius: 50%;
+	text-align: center;
+	line-height: 150px;
+	background-color: #33D8EC;
+}
+
+.top,.bottom {
+	margin: 0 auto;
+}
+
+.left {
+	float: left;
+}
+
+.right {
+	float: right;
+}
+
+.line {
+	width: 20px;
+	height: 1px;
+	background-color: #33D8EC;
+}
+
+.right-top {
+	display: block;
+	position: absolute;
+	top: 124px;
+	left: 301px;
+	width: 0;
+	height: 1px;
+	transform: rotate(38deg);
+	transform-origin: 0% 100%;
+	transition: .3s;
+	background-color: #33D8EC;
+}
+
+.right-bottom {
+	display: block;
+	position: absolute;
+	top: 277px;
+	right: 128px;
+	width: 0;
+	height: 1px;
+	transform: rotate(318deg);
+	transform-origin: 100% 0%;
+	transition: .3s;
+	background-color: #33D8EC;
+}
+
+.left-bottom {
+	display: block;
+	position: absolute;
+	top: 333px;
+	left: 188px;
+	width: 0;
+	height: 1px;
+	transform: rotate(218deg);
+	transform-origin: 0% 100%;
+	transition: .3s;
+	background-color: #33D8EC;
+}
+
+.left-top {
+	display: block;
+	position: absolute;
+	top: 177px;
+	left: 127px;
+	width: 0;
+	height: 1px;
+	transform: rotate(321deg);
+	transform-origin: 0% 100%;
+	transition: .3s;
+	background-color: #33D8EC;
+}
+
+.left,.right,.bottom {
+	display: none;
 }
 
 
