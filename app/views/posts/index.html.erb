@@ -1,181 +1,94 @@
-<h1>Activity一覧ページ</h1>
-<% @posts.each do |post| %>
-	<P>Title</P>
-	<span><%= link_to post.title, post_path(post.id) %></span>
-
-
-
- <div class="container">
- <div class="event-site">
-    <div class="activity row">
-     <div class="col-xs-3 col-sm-4 col-md-12">Activity</div>
-    </div>
- </div>
- </div>
- <div class="event-head container">
-   <nav class="event-nav row">
- 	  <ul>
-     <div class="col-xs-12 col-sm-6"><li><a href="#">Event</a></li></div>
-     <div class="col-xs-12 col-sm-6"><li><a href="#">Programming</a></li></div>
-     <div class="col-xs-12 col-sm-6"><li><a href="#">Skill IN Business</a></li></div>  
-    <div class="col-xs-12 col-sm-6"><li><a href="#">Portfolio</a></li></div>
-	  </ul>
-   </nav>
- </div>
-    
-  <div class="boxA">
-  <div clas="container">
-  <div class="event-box row">
-   <div class="col-xs-12">
-     <article class="event-article">
-       <div class="new">NEW!!</div>
-        <h1>個性あふれる仮装でHalloween<br> <font color="red">❤</font>　１０８０　2016.11.04</h1>
-        <%= image_tag('img.png', :size => "200x200", :class => "new-event") %>
-        <p class="event-sentence">ハロウィンパーティーしましたーーー！！！...<br>記事。。。。。</p>
-     </article>
+<div class="big-container">
+    <div class="container">
+    <div class="event-site">
+       <div class="activity row">
+        <div class="col-xs-3 col-sm-4 col-md-12">Activity</div>
+       </div>
    </div>
-   <div class="col-xs-12">
-     <article class="event-sub-article">
-        <h1>PPFサークル</h1>
-        <%= image_tag('img.png', :size => "200x200", :class => "sub-event") %>
-        <p class="event-sentence">記事。。。。。
-        </p>
-        <p class="event-day"><font color="red">❤</font>３００　2016.10.10</p>
-     </article>
-    </div>
-    <div class="col-xs-12">
-     <article class="event-sub-article">
-        <h1>プログラミング講座</h1>
-        <%= image_tag('img.png', :size => "200x200", :class => "sub-event") %>
-        <p class="event-sentence">記事。。。。。
-        </p>
-        <p class="event-day"><font color="red">❤</font>２００　2016.08.08</p>
-     </article>
-    </div>
-  </div>
-  </div>
-  <div class="side-box">
-     <aside class="event-side">
-     <h1>人気記事</h1>
-     <ul>
-        <li><a href="#">2016.11.11 <font color="red">❤</font>３４６<br>
-        <%= image_tag('img.png', :size => "50x50", :class => "side-img") %>
-        <p class="side-text">PPFイベント</p></li>
-        <li><a href="#">2016.11.24　❤７９３<br>...</a></li>
-        <li><a href="#">2016.11.30　❤５００<br>...</a></li>
-        <li><a href="#">2017.01.20　❤９０１<br>...</a></li>
-     </ul>   
-     </aside>
-
-    <aside class="event-side-osu">
-      <h1>おすすめ記事</h1>
-    <ul>
-       <li><a href="#">2016.11.11</a></li>
-       <li><a href="#">2016.11.24</a></li>
-       <li><a href="#">2016.11.30</a></li>
-       <li><a href="#">2017.01.20</a></li>
-    </ul>   
-    </aside>
-
-    <aside class="event-side-kako">
-      <h1>過去記事</h1>
-    <ul>
-       <li><a href="#">2016.11.11</a></li>
-       <li><a href="#">2016.11.24</a></li>
-       <li><a href="#">2016.11.30</a></li>
-       <li><a href="#">2017.01.20</a></li>
-    </ul>   
-    </aside>
-</div>
-</div>
-
-
-
-
- <div class="container">
- <div class="event-site">
-    <div class="activity row">
-     <div class="col-xs-3 col-sm-4 col-md-12">Activity</div>
-    </div>
- </div>
- </div>
- <div class="event-head container">
-   <nav class="event-nav row">
- 	  <ul>
-     <div class="col-xs-12 col-sm-6"><li><a href="#">Event</a></li></div>
-     <div class="col-xs-12 col-sm-6"><li><a href="#">Programming</a></li></div>
-     <div class="col-xs-12 col-sm-6"><li><a href="#">Skill IN Business</a></li></div>  
-    <div class="col-xs-12 col-sm-6"><li><a href="#">Portfolio</a></li></div>
-	  </ul>
-   </nav>
- </div>
-    
-  <div class="boxA">
-  <div clas="container">
-  <div class="event-box row">
-   <div class="col-xs-12">
-     <article class="event-article">
-       <div class="new">NEW!!</div>
-        <h1>個性あふれる仮装でHalloween<br> <font color="red">❤</font>　１０８０　2016.11.04</h1>
-        <%= image_tag('img.png', :size => "200x200", :class => "new-event") %>
-        <p class="event-sentence">ハロウィンパーティーしましたーーー！！！...<br>記事。。。。。</p>
-     </article>
    </div>
-   <div class="col-xs-12">
-     <article class="event-sub-article">
-        <h1>PPFサークル</h1>
-        <%= image_tag('img.png', :size => "200x200", :class => "sub-event") %>
-        <p class="event-sentence">記事。。。。。
-        </p>
-        <p class="event-day"><font color="red">❤</font>３００　2016.10.10</p>
-     </article>
+   <div class="event-head">
+     <nav class="event-nav">
+      <ul>
+       <li><a href="#">Event</a></li>
+       <li><a href="#">Programming</a></li>
+       <li><a href="#">Skill IN Business</a></li>
+       <li><a href="#">Portfolio</a></li>
+      </ul>
+     </nav>
+   </div>
+      
+  <div class="boxA">
+    <div clas="container">
+    <div class="event-box row">
+
+     <div class="col-xs-12">
+       <article class="event-article">
+         <div class="new">NEW!!</div>
+          <% @posts.each do |post| %>
+              <h1><%= link_to post.title, post_path(post.id) %><br><font color="red">❤</font>　１０８０　2016.11.04</h1>
+               <%= image_tag('img.png', :size => "200x200", :class => "new-event") %>
+          <% end %>
+          <img class="new-event" src="img/img.jpg">
+          <p class="event-sentence"></p>
+       </article>
+     </div>
+
+     <div class="col-xs-12">
+       <article class="event-sub-article">
+          <h1>PPFサークル</h1>
+          <img class="sub-event" src="img/img.jpg">
+          <p class="event-sentence">記事。。。。。
+          </p>
+          <p class="event-day"><font color="red">❤</font>３００　2016.10.10</p>
+       </article>
+      </div>
+
+      <div class="col-xs-12">
+       <article class="event-sub-article">
+          <h1>プログラミング講座</h1>
+          <img class="sub-event" src="img/img.jpg">
+          <p class="event-sentence">記事。。。。。
+          </p>
+          <p class="event-day"><font color="red">❤</font>２００　2016.08.08</p>
+       </article>
+      </div>
     </div>
-    <div class="col-xs-12">
-     <article class="event-sub-article">
-        <h1>プログラミング講座</h1>
-        <%= image_tag('img.png', :size => "200x200", :class => "sub-event") %>
-        <p class="event-sentence">記事。。。。。
-        </p>
-        <p class="event-day"><font color="red">❤</font>２００　2016.08.08</p>
-     </article>
+    </div>
+
+    <div class="side-box">
+       <aside class="event-side">
+         <h2>人気記事</h2>
+           <ul>
+              <li><a href="#">2016.11.11 <font color="red">❤</font>３４６<br><img class="side-img" src="./assets/images/img/img.jpg"></a>
+              <p class="side-text">PPFイベント</p></li>
+              <li><a href="#">2016.11.24　❤７９３<br>...</a></li>
+              <li><a href="#">2016.11.30　❤５００<br>...</a></li>
+              <li><a href="#">2017.01.20　❤９０１<br>...</a></li>
+           </ul>   
+       </aside>
+
+      <aside class="event-side-osu">
+        <h2>おすすめ記事</h2>
+          <ul>
+             <li><a href="#">2016.11.11</a></li>
+             <li><a href="#">2016.11.24</a></li>
+             <li><a href="#">2016.11.30</a></li>
+             <li><a href="#">2017.01.20</a></li>
+          </ul>   
+      </aside>
+
+      <aside class="event-side-kako">
+        <h2>過去記事</h2>
+          <ul>
+             <li><a href="#">2016.11.11</a></li>
+             <li><a href="#">2016.11.24</a></li>
+             <li><a href="#">2016.11.30</a></li>
+             <li><a href="#">2017.01.20</a></li>
+          </ul>   
+      </aside>
     </div>
   </div>
-  </div>
-  <div class="side-box">
-     <aside class="event-side">
-     <h1>人気記事</h1>
-     <ul>
-        <li><a href="#">2016.11.11 <font color="red">❤</font>３４６<br>
-        <%= image_tag('img.png', :size => "50x50", :class => "side-img") %>
-        <p class="side-text">PPFイベント</p></li>
-        <li><a href="#">2016.11.24　❤７９３<br>...</a></li>
-        <li><a href="#">2016.11.30　❤５００<br>...</a></li>
-        <li><a href="#">2017.01.20　❤９０１<br>...</a></li>
-     </ul>   
-     </aside>
-
-    <aside class="event-side-osu">
-      <h1>おすすめ記事</h1>
-    <ul>
-       <li><a href="#">2016.11.11</a></li>
-       <li><a href="#">2016.11.24</a></li>
-       <li><a href="#">2016.11.30</a></li>
-       <li><a href="#">2017.01.20</a></li>
-    </ul>   
-    </aside>
-
-    <aside class="event-side-kako">
-      <h1>過去記事</h1>
-    <ul>
-       <li><a href="#">2016.11.11</a></li>
-       <li><a href="#">2016.11.24</a></li>
-       <li><a href="#">2016.11.30</a></li>
-       <li><a href="#">2017.01.20</a></li>
-    </ul>   
-    </aside>
-</div>
 </div>
 
-
-
-<% end %>
+<%= link_to "一覧に戻る", '/activity' %>
+<%= link_to "新規投稿", posts_new_path %>

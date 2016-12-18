@@ -1,23 +1,18 @@
 Rails.application.routes.draw do
   
-  devise_for :users
+
   get 'posts/new' => 'posts#new'
   post 'posts/create' => 'posts#create'
-  get '/posts' => 'posts#index'
-  get 'posts/:id' => 'posts#show', as: 'post'
   get 'posts/:id/edit' => 'posts#edit', as: 'edit_post'
+  get 'posts/:id' => 'posts#show', as: 'post'
   patch '/posts/:id' => 'posts#update', as: 'update_post'
   delete '/posts/:id/' => 'posts#destroy', as: 'destroy_post'
-
-  # resources:posts
+  # resources　:posts
 
 
   get 'portfolios/index' => 'portfolios#index'
-
   get 'portfolios/show' => 'portfolios#show'
-
   get 'members/index' => 'members#index'
-
   get 'members/:id/show' => 'members#show'
 
   # get 'members/edit' => 'members#edit'
@@ -27,7 +22,9 @@ Rails.application.routes.draw do
   root 'home#top'
 
   get '/concept' => 'home#concept'
-  get '/activity' => 'home#activity'
+
+  get '/activity' => 'posts#index'
+  
   get '/contact' => 'home#contact'
   get '/about' => 'home#about'
 
