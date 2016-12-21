@@ -215,3 +215,28 @@ Things you may want to cover:
 </div>
 
 </article>
+
+
+
+
+
+
+
+      <ul class="nav navbar-nav navbar-right">
+            <li><%#= link_to "Concept", concept_path %></li>
+            <li><%#= link_to "What'sPPF", about_path %></li>
+            <li><%#= link_to "Portfolios", portfolios_index_path %></li>
+            <li><%#= link_to "Member", "/members/index" %></li>
+        <li><%#= link_to "Activity", activity_path %></li>
+        <li><%#= link_to "Contact", contact_path %></li>
+        <!-- <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><%#= link_to "Concept", concept_path %></li>
+            <li><%#= link_to "What'sPPF", about_path %></li>
+            <li><%#= link_to "Portfolios", portfolios_index_path %></li>
+            <li role="separator" class="divider"></li>
+            <li><a href="#">Separated link</a></li>
+          </ul>
+        </li> -->
+      </ul> 

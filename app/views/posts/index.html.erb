@@ -25,59 +25,46 @@
        <article class="event-article">
          <div class="new">NEW!!</div>
           <% @posts.each do |post| %>
-              <h1><%= link_to post.title, post_path(post.id) %><br><font color="red">❤</font>　１０８０　2016.11.04</h1>
+              <h1><%= link_to post.title, post_path(post.id) %><br>
+              <!-- <font color="red">❤</font> -->
+              <%= post.created_at.strftime('%Y/%m/%d %H:%M') %></h1>
+              <div class="new-events">
                <%= image_tag('img.png', :size => "200x200", :class => "new-event") %>
+              </div>
           <% end %>
-          <img class="new-event" src="img/img.jpg">
+          
           <p class="event-sentence"></p>
        </article>
+       <%= paginate @posts %>
      </div>
 
-     <div class="col-xs-12">
-       <article class="event-sub-article">
-          <h1>PPFサークル</h1>
-          <img class="sub-event" src="img/img.jpg">
-          <p class="event-sentence">記事。。。。。
-          </p>
-          <p class="event-day"><font color="red">❤</font>３００　2016.10.10</p>
-       </article>
-      </div>
-
-      <div class="col-xs-12">
-       <article class="event-sub-article">
-          <h1>プログラミング講座</h1>
-          <img class="sub-event" src="img/img.jpg">
-          <p class="event-sentence">記事。。。。。
-          </p>
-          <p class="event-day"><font color="red">❤</font>２００　2016.08.08</p>
-       </article>
-      </div>
     </div>
-    </div>
+  </div>
 
     <div class="side-box">
        <aside class="event-side">
          <h2>人気記事</h2>
-           <ul>
-              <li><a href="#">2016.11.11 <font color="red">❤</font>３４６<br><img class="side-img" src="./assets/images/img/img.jpg"></a>
-              <p class="side-text">PPFイベント</p></li>
-              <li><a href="#">2016.11.24　❤７９３<br>...</a></li>
-              <li><a href="#">2016.11.30　❤５００<br>...</a></li>
-              <li><a href="#">2017.01.20　❤９０１<br>...</a></li>
-           </ul>   
+          <ul>
+            <% @posts_new.each do |post| %>
+                <li><a><%= link_to post.title, post_path(post.id) %>
+                <!-- <font color="red">❤</font> -->
+                <%= post.created_at.strftime('%Y.%m.%d') %></a></li>
+            <% end %>   
+          </ul>   
        </aside>
 
       <aside class="event-side-osu">
         <h2>おすすめ記事</h2>
           <ul>
-             <li><a href="#">2016.11.11</a></li>
-             <li><a href="#">2016.11.24</a></li>
-             <li><a href="#">2016.11.30</a></li>
-             <li><a href="#">2017.01.20</a></li>
+            <% @posts_new.each do |post| %>
+                <li><a><%= link_to post.title, post_path(post.id) %>
+                <!-- <font color="red">❤</font> -->
+                <%= post.created_at.strftime('%Y.%m.%d') %></a></li>
+            <% end %>   
           </ul>   
       </aside>
 
-      <aside class="event-side-kako">
+<!--       <aside class="event-side-kako">
         <h2>過去記事</h2>
           <ul>
              <li><a href="#">2016.11.11</a></li>
@@ -86,9 +73,9 @@
              <li><a href="#">2017.01.20</a></li>
           </ul>   
       </aside>
-    </div>
+ -->    </div>
   </div>
 </div>
 
-<%= link_to "一覧に戻る", posts_path %>
+<%= link_to "一覧に戻る", '/activity' %>
 <%= link_to "新規投稿", posts_new_path %>
