@@ -16,7 +16,7 @@
   <nav>
   <!-- <div class="container-fluid"> -->
     <!-- Brand and toggle get grouped for better mobile display -->
-    <div class="navbar-header">
+<!--     <div class="navbar-header">
       <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
         <span class="sr-only">Toggle navigation</span>
         <span class="icon-bar"></span>
@@ -24,10 +24,11 @@
         <span class="icon-bar"></span>
       </button>
     </div>
-
+ -->
     <!-- Collect the nav links, forms, and other content for toggling -->
 <!--     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
       <ul class="nav navbar-nav"> -->
+   <!--    <ul class="menu-all">
         <li class="dropdown">
           <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"> 
                 <div id="menu">
@@ -35,17 +36,8 @@
                     <span class="bar" id="bar02"></span>
                     <span class="bar" id="bar03"></span>
                 </div>
-                </a>
-          <ul class="dropdown-menu">
-            <li><%= link_to "Concept", concept_path %></li>
-            <li><%= link_to "What'sPPF", about_path %></li>
-            <li><%= link_to "Portfolios", portfolios_index_path %></li>
-            <li><%= link_to "Member", "/members/index" %></li>
-        <li><%= link_to "Activity", activity_path %></li>
-        <li><%= link_to "Contact", contact_path %></li>
-          </ul>
-        </li>
-      </ul>
+                </a> -->
+
 <!--       <form class="navbar-form navbar-left">
         <div class="form-group">
           <input type="text" class="form-control" placeholder="Search">
@@ -63,6 +55,40 @@
           <%#= link_to "サインイン", new_member_registration_path %> 
           <%#= link_to "ログイン", new_member_session_path %>
         <%# end %>
+
+
+
+
+    <!-- <nav class="navbar navbar-default "> -->
+      <div class="container-fluid">
+      <div class="collapse navbar-collapse">
+     
+      <!-- 右寄せになる部分 ================ -->
+          <ul class="nav navbar-nav navbar-right">
+            <!-- リンクのみ -->
+              <!-- <li><a href="#">Link</a></li> -->
+            <!-- Nav6 ドロップダウン -->
+              <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                  <div id="menu">
+                      <span class="bar" id="bar01"></span>
+                      <span class="bar" id="bar02"></span>
+                      <span class="bar" id="bar03"></span>
+                  </div>
+                </a>
+                <ul class="dropdown-menu">
+                  <li><%= link_to "Concept", concept_path %></li>
+                  <li><%= link_to "What'sPPF", about_path %></li>
+                  <li><%= link_to "Portfolios", portfolios_index_path %></li>
+                  <li><%= link_to "Member", "/members/index" %></li>
+                  <li><%= link_to "Activity", activity_path %></li>
+                  <li><%= link_to "Contact", contact_path %></li>
+                </ul>
+              <!-- </li> -->
+          </ul>
+      </div>
+      </div>
+    </nav>
 
         
     <%= yield %>
