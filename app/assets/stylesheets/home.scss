@@ -422,10 +422,11 @@ img .icon{
 	border-bottom: dotted 2px #dddddd;
 }
 
-.event-sub-article h1{
-	color: #05306e;
+.event-sub-article{
+	 h1{
+		color: #05306e;
+	}
 }
-
 .event-day{
 	float: right;
 }
@@ -840,7 +841,7 @@ section{
 }
 
 /*contact*/
-
+/*
 header {
 	position: fixed;
 	z-index: 999;
@@ -869,7 +870,7 @@ nav {
 	line-height: 70px;
 	text-align: right;
 }
-
+*/
 
 /*Contact*/
 
