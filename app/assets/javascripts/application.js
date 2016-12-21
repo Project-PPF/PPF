@@ -23,3 +23,37 @@
         });
     });
 })(jQuery);
+
+
+$(function(){
+  $(window).scroll(function(){
+    var textOffset =$('.top-text').offset();
+      if($(this).scrollTop() > textOffset.top){
+        $('.top-text').fadeIn(1500);
+        $('.bottom-text').delay(500).fadeIn(1500);
+      };
+
+    var offset =$('.round-container').offset();
+      if($(this).scrollTop()+200 > offset.top){
+        $('.top').fadeIn(1000);
+        $('.right-top').delay(1000).animate({
+          'width':'105px'
+        },'linear');
+
+        $('.right').delay(1500).fadeIn(1000);
+        $('.right-bottom').delay(2500).animate({
+          'width':'105px'
+        },'linear');
+
+        $('.bottom').delay(3000).fadeIn(1000);
+        $('.left-bottom').delay(4000).animate({
+          'width':'105px'
+        },'linear');
+
+        $('.left').delay(4500).fadeIn(1000);
+        $('.left-top').delay(5500).animate({
+          'width':'105px'
+        },'linear');
+      }
+  });
+});
