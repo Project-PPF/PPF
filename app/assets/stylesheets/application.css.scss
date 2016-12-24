@@ -21,18 +21,69 @@
 @import "bootstrap-sprockets";
 @import "bootstrap-custom";
 
-/*body {
+body {
     background-color: #E6F8F8 !important;
     text-align: center;
     color: #FCFFFF;
     font-size: 14px;
     font-family: 'ヒラギノ明朝 Pro W3', 'Hiragino Mincho Pro';
-}*/
+}
 
 *{
 	margin: 0;
 	padding: 0;
 }
+.navbar{
+    position: fixed;
+}
+
+.menu-all{
+    float: right;
+    list-style: none;
+}
+
+.dropdown-menu{
+    position: relative;
+    /*right: 100;*/
+}
+
+#menu {
+    width: 30px;
+    height: 25px;
+    margin: 0 auto;
+    left: 20;
+    cursor: pointer;
+}
+#menu .bar {
+    display: inline-block;
+    width: 55px;
+    height: 7px;
+    background-color: #0099FF;
+    position: absolute;
+    right: 0;
+    transition: .15s ease-in-out;
+}
+#bar01 {
+    top: 5px;
+}
+#bar02 {
+    top: 20px;
+}
+#bar03 {
+    top: 35px;
+}
+.active #bar01 {
+    top: 20px;
+    transform: rotate(45deg);
+}
+.active #bar02 {
+    width: 0;
+}
+.active #bar03 {
+    top: 20px;
+    transform: rotate(-45deg);
+}
+
 
 .footer-container{
 	width: 100%;

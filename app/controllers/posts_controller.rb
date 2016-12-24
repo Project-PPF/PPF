@@ -12,7 +12,8 @@ class PostsController < ApplicationController
   end
 
   def index
-  	@posts = Post.all
+  	@posts = Post.all.order("id DESC").page(params[:page]).per(5)
+    @posts_new = Post.all.order("id DESC").limit(5)
   end
 
   def show
